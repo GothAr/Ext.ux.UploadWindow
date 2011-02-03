@@ -49,8 +49,8 @@ GothAr.Upload.Window = Ext.extend(Ext.ux.Upload.Window, {
             this.fireEvent('appendfiles');
         }
     },
-    initComponent: function () {
-        GothAr.Upload.Window.superclass.initComponent.apply(this, arguments);
+    initEvents: function () {
+        GothAr.Upload.Window.superclass.initEvents.apply(this, arguments);
 
         this.on('progress', function (progress) {
             this.webServicePresent = true;  //we can say that there is web service uploader and we successfully start uploading.
