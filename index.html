@@ -11,11 +11,14 @@
 
   <script type="text/javascript" src="lib/Function.Invoke.js"></script>
   <script type="text/javascript" src="lib/FileUploadField.js"></script>
-  <script type="text/javascript" src="lib/ux/upload/Ext.ux.Upload.Window.js"></script>
   <script type="text/javascript" src="lib/ux/upload/Ext.ux.Upload.Manager.js"></script>
+  <script type="text/javascript" src="lib/ux/upload/Ext.ux.Upload.Window.js"></script>
+  <script type="text/javascript" src="scripts/GothAr.Upload.Window.js"></script>  
   
   <script>
     Ext.QuickTips.init();
+    Ext.ux.Upload.Manager.uploadWinClass = GothAr.Upload.Window;
+    Ext.ux.Upload.Manager.getUploadWindow().show();
   </script>
 
 </body>
